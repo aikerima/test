@@ -280,7 +280,7 @@ void _ISR _T1Interrupt(void)
 	IFS0bits.T1IF = 0;		
 	
 	// Toggle the LED Specified by the User.0x0001 0000 0000 0000<<0
-	//
+
          
         LATB ^= ((0x1000)<<(7-ledToToggle));
 
